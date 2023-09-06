@@ -17,10 +17,7 @@ pipeline {
 
         stage('test') {
           steps {
-            sh '''cd src
-npm install 
-cd ..
-npm run start'''
+            sh 'cd src && npm install && cd .. && npm run start'
           }
         }
 
